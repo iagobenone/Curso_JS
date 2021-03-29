@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ordenação metodo sort();
+        /*
+        var Cidades = ["São Paulo", "Aracaju", "Recife", "Natal"];
+        for(i = 0; i < Cidades.length; i++){
+            document.write(Cidades[i] + "</br>");
+        }
+
+        Cidades.sort();
+        for(i = 0; i < Cidades.length; i++){
+            document.write(Cidades[i] + "</br>");
+        }
+        */
+
+        var Valores = [12, 34, 6, 45, 10, 9, 44, 38, 23, 98];
+        
+        function ordenaNum(a,b){ //função de ordenação
+            return a-b; // compara os numeros 
+        }
+
+        Valores.sort(ordenaNum); // chama a função de ordenação e passa como parametro a função ordenaNum
+        for(i = 0; i < Valores.length; i++){
+            document.write(Valores[i] + "</br>");
+        }
+    </script>
+</body>
+</html>

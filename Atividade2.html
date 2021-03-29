@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>atividade 2</title>
+    </head>
+    <body>
+        <button id="botao"> Clique Aqui</button>
+
+        <div id="box"></div>
+    </body>
+
+    <script>
+
+        var buttonElement = document.querySelector('#botao');
+        var boxElement = document.querySelector('#box');
+
+
+        buttonElement.onclick = function(){
+
+
+            
+            var box = document.createElement('div');
+             boxElement.style.width = 100;
+            boxElement.style.height = 100;
+            boxElement.style.backgroundColor = '#f00';
+
+            boxElement.appendChild(box);
+
+        };
+       
+
+
+
+
+    </script>
+</html>

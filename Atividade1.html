@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Atividade 1</title>
+    </head>
+    <body>
+        <script>
+
+           /*/var endereco ={
+                rua: "Rua dos pinheiros", 
+                numero: 1293, 
+                bairro: "centro",
+                cidade: "Sao Paulo", 
+                uf: "SP"
+            }
+
+            function exibe (rua, numero, bairro, cidade, uf){
+                console.log( "O usuario mora em " + endereco.cidade +"/" + endereco.uf + ", no bairro " + endereco.bairro  + ", na rua: " + endereco.rua + " com nº: "+ endereco.numero);
+            } 
+
+            exibe(); // exibir a função
+
+            function pares(x, y){
+                for(var i = x; i <= y; i++){
+                    if(i % 2 === 0){ // o % verifica se o resto da divisão é igual a 0 
+                        console.log(i);
+                    }
+                }
+            }
+            function impares(x, y){
+                for(var i = x; i <= y; i++){
+                    if(i % 2 != 0){
+                        console.log(i);
+                    }
+                }
+            }
+            pares(0, 10);
+            impares(0,20);
+
+
+            var skills = ["Javascript","ReactJS", "React Native"];// Váriaveis 
+
+            function temHabilidade(skills){ // Função temHabilidade para verificar se há a habilidade Javascript
+                if(skills.indexOf("Javascript") !== -1){ // IndexOf retorna -1 caso o objeto procurado não seja encontrado, nesse caso se o objeto encontrado for diferente disso ele existe.indexOf serve para percorrer o Array e verificar se há um determinado elemento nele 
+                    return console.log("tem a skill");
+                } else {
+                    return console.log ("não tem a skill");
+                }
+            }
+            
+            temHabilidade(skills);
+            
+
+            var anosDeEstudo = 7; 
+
+            function experiencia(anos){
+                switch (true) {
+                    case anos >=0 && anos <= 1:  console.log("Iniciante");
+                    break;
+                    case anos >=1 && anos <= 3:  console.log("Intermediario");
+                    break;
+                    case anos >=3 && anos <= 6:  console.log("Avançado");
+                    break;
+                    default: console.log("É o Jedi Master pae");
+                        break;
+                }
+            }
+            experiencia(1);
+            experiencia(3);
+            experiencia(5);
+            experiencia(7);*/
+
+            var usuarios = [
+            {
+                nome: "Guinho",
+                habilidades: ["Javascript","ReactJS", "Redux"]
+            },
+            {
+                nome: "Tonho",
+                habilidades: ["VueJS","Ruby ou Rails", "Elixir"]
+            }
+         ];
+            
+            function mostrarMensagem (usuarios){
+                for(let usuario of usuarios){
+                    let {nome, habilidades } = usuario;
+                    console.log(`O ${nome} possui as habilidade: ${habilidades.join(", ")}`);
+                }
+            }
+
+            mostrarMensagem(usuarios);
+        </script>
+    </body>
+</html>

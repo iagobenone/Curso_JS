@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 3 modulo 2</title>
+    </head>
+
+    <body>
+
+        <div id="app">
+
+        </div>
+        <script>
+            var linkElement = document.createElement('a');// criar um link passando a tag a 
+
+            linkElement.setAttribute('href','http://rocketseat.com.br'); // setar o atributo e passar o tipo como um link 
+
+            var textElement = document.createTextNode('Acessar o site da rocket'); //criar um texto para ser possivel clicar e acessar o link
+
+            linkElement.appendChild(textElement); // adicionar o textElement como um filho do linkElement
+
+            var containerElement = document.querySelector('#app'); // acessar a div app
+            containerElement.appendChild(linkElement);// adicionar o linkElement como um filho do containerElement
+
+
+
+
+        </script>
+    </body>
+</html>

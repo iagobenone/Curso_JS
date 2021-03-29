@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    // If e Else 
+    
+    var name = prompt("informe o seu nome");
+    var nota1 = prompt("informe a primeira nota:");
+    var nota2 = prompt("informe a segunda nota");
+    var nota3 = prompt("informe a terceira nota");
+    var nota4 = prompt("informe a quarta nota");
+    var result;
+
+    nota1 = Number(nota1); //passar a string para number
+    nota2 = Number(nota2); //passar a string para number
+    nota3 = Number(nota3); //passar a string para number
+    nota4 = Number(nota4); //passar a string para number
+
+    result = (nota1 + nota2 + nota3 + nota4)/4;
+
+
+    if(result >= 7){
+        alert("Você foi aprovado " + name +  " sua média anual é: " + result);
+
+    }else if(result < 7 && result > 4){
+        alert("Você está em recuperação " + name + " sua média é: " + result);
+    }else{
+        alert("Você está reprovado otario vai estudar, sua média anual é: " + result);
+    }
+    </script>
+</body>
+</html>
